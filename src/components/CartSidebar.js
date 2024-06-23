@@ -7,10 +7,10 @@ import './css/CartSidebar.css';
 const CartSidebar = ({ toggleCart }) => {
     const { cart, removeFromCart, adjustQuantity } = useContext(CartContext);
 
-    const handleQuantityChange = (productId, event) => {
-        const newQuantity = parseInt(event.target.value, 10);
-        adjustQuantity(productId, newQuantity);
-    };
+    // const handleQuantityChange = (productId, event) => {
+    //     const newQuantity = parseInt(event.target.value, 10);
+    //     adjustQuantity(productId, newQuantity);
+    // };
 
     const handleIncreaseQuantity = (productId, currentQuantity) => {
         adjustQuantity(productId, currentQuantity + 1);
