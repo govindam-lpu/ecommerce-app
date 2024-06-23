@@ -10,10 +10,10 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     transition: transform 0.2s;
-    height: 90%; /* Ensure all cards have the same height */
-    margin-bottom: 20px; /* Add space between rows */
-    overflow: hidden; /* Prevent overflow of content */
-    color: #000; /* Ensure text inside the card is black */
+    height: 90%; 
+    margin-bottom: 20px; 
+    overflow: hidden; 
+    color: #000; 
 }
 
 .product-card:hover {
@@ -22,11 +22,11 @@
 
 .product-card img {
     max-width: 100%;
-    height: 200px; /* Ensure all images have a consistent height */
+    height: 200px; /* Ensuring that all the images have a consistent height */
     object-fit: cover;
     margin-bottom: 15px;
     flex-shrink: 0;
-    border-radius: 4px; /* Optional: Add some rounding to image edges */
+    border-radius: 4px; 
 }
 
 .product-card h3 {
@@ -35,25 +35,25 @@
     color: #333;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2; /* Show ellipsis after 2 lines */
+    -webkit-line-clamp: 2; /* Show ellipsis after 2 lines for the truncating text*/
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
     line-height: 1.5rem; /* Adjust line height to control the number of lines */
-    font-family: 'Montserrat', sans-serif; /* Font for headings */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .product-card p {
     font-size: 1rem;
     margin: 5px 0;
     color: #666;
-    font-family: 'Raleway', sans-serif; /* Font for paragraphs */
+    font-family: 'Raleway', sans-serif; 
 }
 
 .product-card a {
     text-decoration: none;
     color: inherit;
-    width: 100%; /* Ensure link takes full width */
+    width: 100%; 
 }
 
 .product-card button {
@@ -66,8 +66,8 @@
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 10px;
-    width: 100%; /* Ensure button takes full width */
-    font-family: 'Raleway', sans-serif; /* Font for paragraphs */
+    width: 100%; 
+    font-family: 'Raleway', sans-serif; 
 }
 
 .product-info button:hover {

@@ -4,7 +4,7 @@
     align-items: flex-start;
     padding: 20px;
     gap: 20px;
-    max-width: 1200px;
+    max-width: 1200px;  /* Marking the maximum width of the image and text description */
     margin: 0 auto;
 }
 
@@ -32,20 +32,20 @@
 .product-info h1 {
     font-size: 2rem;
     margin-bottom: 10px;
-    font-family: 'Montserrat', sans-serif; /* Font for headings */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .product-info .category {
     font-weight: bold;
     color: #333;
-    font-family: 'Montserrat', sans-serif; /* Font for headings */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .product-info p {
     font-size: 1rem;
     color: #666;
     line-height: 1.5;
-    font-family: 'Raleway', sans-serif; /* Font for paragraphs */
+    font-family: 'Raleway', sans-serif; 
 }
 
 .product-info .price {
@@ -65,7 +65,7 @@
     transition: background-color 0.3s;
     width: fit-content;
     align-self: center;
-    font-family: 'Raleway', sans-serif; /* Font for paragraphs */
+    font-family: 'Raleway', sans-serif; 
 }
 
 .product-info button:hover {
@@ -79,7 +79,7 @@
     align-items: center;
     gap: 5px;
     margin-top: 10px;
-    justify-content: center; /* Center the quantity controls */
+    justify-content: center; 
 }
 
 .quantity-controls button {

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { CartContext } from './CartContext';
 import './css/ProductCard.css';
 
+// Creating the ProductCard component that will display the product details
 const ProductCard = ({ product }) => {
     const { addToCart, adjustQuantity, removeFromCart, getProductQuantity } = useContext(CartContext);
     const [quantity, setQuantity] = useState(0);

@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import { CartContext } from './CartContext';
 import './css/CartSidebar.css';
 
+// Creating the CartSidebar component that will display the cart items and the total price
+
 const CartSidebar = ({ toggleCart }) => {
     const { cart, removeFromCart, adjustQuantity } = useContext(CartContext);
 

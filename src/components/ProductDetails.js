@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import { CartContext } from './CartContext';
 import './css/ProductDetails.css';
 
+// Creating the ProductDetails component that will display the product details in their respective pages
+
 const ProductDetails = () => {
     const { id } = useParams();
     const [product, setProduct] = useState(null);
