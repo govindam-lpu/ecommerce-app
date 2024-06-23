@@ -1,0 +1,107 @@
+.product-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-image {
+    flex: 1;
+    max-width: 20%;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    max-width: 50%;
+}
+
+.product-info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif; /* Font for headings */
+}
+
+.product-info .category {
+    font-weight: bold;
+    color: #333;
+    font-family: 'Montserrat', sans-serif; /* Font for headings */
+}
+
+.product-info p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif; /* Font for paragraphs */
+}
+
+.product-info .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.product-info button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: fit-content;
+    align-self: center;
+    font-family: 'Raleway', sans-serif; /* Font for paragraphs */
+}
+
+.product-info button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    justify-content: center; /* Center the quantity controls */
+}
+
+.quantity-controls button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #999;
+    padding: 0;
+}
+
+.quantity-controls input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    margin: 0 5px;
+}
+
+.quantity-controls button:hover {
+    color: #000;
+    border: none;
+}

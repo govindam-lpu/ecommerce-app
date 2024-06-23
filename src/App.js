@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import ProductList from './components/ProductList';
+import ProductDetails from './components/ProductDetails';
+import Cart from './components/Cart';
+import CartSidebar from './components/CartSidebar';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const [isCartOpen, setIsCartOpen] = useState(false);
+
+    const toggleCart = () => {
+        setIsCartOpen(!isCartOpen);
+    };
+
+    return (
+        <Router>
+            <nav>
+                <Link to="/" className="nav-link">H O M E</Link>
+                <button className="cart-icon" onClick={toggleCart}>🛒</button>
+            </nav>
+            {isCartOpen && <CartSidebar toggleCart={toggleCart} />}
+            <Routes>
+                <Route path="/" element={<ProductList />} />
+                <Route path="/product/:id" element={<ProductDetails />} />
+                <Route path="/cart" element={<Cart />} />
+            </Routes>
+        </Router>
+    );
+};
 
 export default App;

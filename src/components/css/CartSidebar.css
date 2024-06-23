@@ -1,0 +1,124 @@
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0);
+    font-family: 'Montserrat', sans-serif; /* Font for headings */
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    float: right;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+    width: 50px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-details h3 {
+    font-size: 1rem;
+    margin: 0;
+    color: #333;
+    font-family: 'Montserrat', sans-serif; /* Font for headings */
+}
+
+.item-details p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #666;
+    font-family: 'Raleway', sans-serif; /* Font for paragraphs */
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.quantity-controls button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #999;
+    padding: 0;
+}
+
+.quantity-controls input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    margin: 0 5px;
+}
+
+.quantity-controls button:hover {
+    color: #000;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.cart-total {
+    text-align: right;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif; /* Font for paragraphs */
+}
+
+.cart-total h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif; /* Font for paragraphs */
+}
+
+.checkout-btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
